@@ -29,4 +29,14 @@ public class UserController {
         }
         return ConstantUtils.getResponseEntity(Constant.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody(required = true) Map<String, String> requestMap) {
+        try {
+            return userService.login(requestMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ConstantUtils.getResponseEntity(Constant.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }
