@@ -1,4 +1,4 @@
-package app.ms_user.error;
+package app.ms_user.util.error;
 
 public class Constant {
 

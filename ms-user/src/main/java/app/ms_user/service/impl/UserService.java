@@ -1,7 +1,7 @@
 package app.ms_user.service.impl;
 
 import app.ms_user.domain.User;
-import app.ms_user.error.Constant;
+import app.ms_user.util.error.Constant;
 import app.ms_user.repository.UserRepository;
 import app.ms_user.service.IUserService;
 import app.ms_user.util.ConstantUtils;
